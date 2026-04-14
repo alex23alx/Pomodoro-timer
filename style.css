@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+.navbar {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    font-size: 1.2em;
+}
+
+.navbar ul li a:hover {
+    background-color: red;
+    border-radius: 5px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Orbitron:wght@400;700&display=swap');
+
+body{
+    min-height: 100vh;
+    background-color: #afcfd4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2em;
+    padding-top: 20px;
+
+}
+header {
+    text-align: center;
+    width: 100%;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    color: white;
+}
+.title{
+    font-size: 3em;
+}
+hr{
+    width: 80%;
+    background-color: white;
+    height: 5px;
+    border-radius: 1em;
+    border: none;
+    margin:10px auto;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+}
+.apple {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.timer{
+    font-size: 5em;
+    font-weight: 700;
+    color: white;
+    font-family: "Orbitron", sans-serif;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    white-space: nowrap;
+    transition: color 0.3s ease;
+}
+.timer:hover {
+    color: rgb(225, 225, 117);
+}
+.timer.alert {
+    color: red;
+    background-color: rgba(255, 255, 255, 0.3); 
+    padding: 10px;
+    border-radius: 5px; 
+    border: 2px solid red; 
+}
+.button-wrapper{
+    display: flex;
+    gap: 1em;
+}
+button{
+    font-size: 2em;
+    font-weight: 800;
+    letter-spacing: 1px;
+    padding: 0.5em 1.5em;
+    border-radius: 0.5em;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+    transition: border 0.3s ease;
+
+}
+button:hover{
+    border: 3.5px solid black;
+}
+#start{
+    background-color:rgb(83, 119, 83);
+}
+#pause{
+    background-color: rgb(239, 239, 117);
+}
+#stop{
+    background-color: rgb(172, 73, 73);
+}
